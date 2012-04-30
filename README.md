@@ -12,15 +12,13 @@ This has saved me a lot of time creating layouts that look good across different
 ```Java
 
 package com.my.package;
-
 ```
 
 2. Create an instance of this class:
 
 ```Java
 
-	ScreenUtility utility = new ScreenUtility(this);
-
+ScreenUtility utility = new ScreenUtility(this);
 ```
 (We need to pass the current activity to it in the constructor)
 
@@ -29,7 +27,6 @@ package com.my.package;
 ```Java
 
 Button myButton = (Button)findViewById(R.id.mybutton);
-
 ```
 
 4. Set its dimensions!
@@ -39,7 +36,6 @@ Button myButton = (Button)findViewById(R.id.mybutton);
  int width = 100;
  int height = 20;
  utility.setViewObjectDimensionsAsPercentage(height, width, myButton);
-
 ```
 
 The view object will now be the size you gave it, in percentage, of the total height and width of the screen size.
